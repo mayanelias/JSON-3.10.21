@@ -47,25 +47,26 @@
 // console.log(JSON.stringify(object));  
 //     });
 //!4//
-// function object(name,age,city,year){
-// return{name,age,city,year}
+// function getJson(name,age,city,year){
+// return`{"name":"${name}","age":${age},"city":"${city}","year":${year}}`
 // }
-// let person=object("gil",28,"jerusalem",1993);
+// let person=getJson("gil",28,"jerusalem",1993);
 // console.log(person);
-// console.log(JSON.stringify(person));
-// //!5//
-// `"function" json("name","age,city,year){
-// return{name,age,city,year}
-// }`
-// let person1=json("gil",28,"jerusalem",1993);
-// console.log(JSON.parse(person1));
-//!6//
-// function ageMultipleByThree(age,name,email){
-// return{age,name,email}
+//!5//
+// function getObject(name,age,city,year){
+//     let json=`{"name":"${name}","age":${age},"city":"${city}","year":${year}}`
+// return JSON.parse(json)
 // }
-// let person2=ageMultipleByThree(27*3,"mayan","eliasmayan@gmail.com");
-// console.log(person2);
-// console.log(JSON.stringify(person2));
+// let person=getObject("gil",28,"jerusalem",1993);
+// console.log(person);
+// !6//
+// function ageMultipleByThree(age,name,email){
+// return`{"age":${age},"name":"${name}","email":"${email}"}`
+// }
+// let person=ageMultipleByThree(27*3,"mayan","eliasmayan@gmail.com");
+// console.log(person);
+// console.log(JSON.parse(person));
+
 
 
 
